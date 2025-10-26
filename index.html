@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teorema de Pitágoras</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f9f4;
+      color: #333;
+    }
+    header {
+      background-color: #2e7d32;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 2.5em;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+    }
+    header span {
+      color: #a5d6a7;
+      font-size: 1em;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #388e3c;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: white;
+      padding: 15px 20px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    nav a:hover {
+      background-color: #2e7d32;
+    }
+    section {
+      padding: 40px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      color: #2e7d32;
+      border-bottom: 3px solid #a5d6a7;
+      padding-bottom: 5px;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .accordion {
+      margin: 20px 0;
+    }
+    .accordion button {
+      background-color: #e0f2f1;
+      color: #333;
+      cursor: pointer;
+      padding: 15px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 1.1em;
+      font-weight: bold;
+      transition: background 0.3s;
+      border-radius: 8px;
+      margin-bottom: 5px;
+    }
+    .accordion button:hover {
+      background-color: #b2dfdb;
+    }
+    .panel {
+      padding: 0 15px;
+      background-color: white;
+      display: none;
+      overflow: hidden;
+      border-radius: 0 0 8px 8px;
+      box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .tarjeta {
+      margin: 10px 0;
+      padding: 12px;
+      border-radius: 8px;
+      font-weight: 500;
+    }
+    .verde { background-color: #c8e6c9; }
+    .azul { background-color: #bbdefb; }
+    .amarillo { background-color: #fff9c4; }
+  </style>
+</head>
+<body>
+
+<header>▲ Teorema de Pitágoras <span>Explicado Fácil</span></header>
+
+<nav>
+  <a href="#inicio">Inicio</a>
+  <a href="#juego">Juego</a>
+  <a href="#verdes">Tarjetas Verdes</a>
+  <a href="#azules">Tarjetas Azules</a>
+  <a href="#amarillas">Tarjetas Amarillas</a>
+</nav>
+
+<section id="inicio">
+  <h2>¿Qué es el Teorema de Pitágoras?</h2>
+  <div class="card">
+    <p>El <b>Teorema de Pitágoras</b> es uno de los principios más importantes de la geometría. Afirma que en un
+    triángulo rectángulo, el cuadrado de la longitud de la hipotenusa (el lado más largo) es igual a la suma de
+    los cuadrados de los catetos (los otros dos lados):</p>
+    <p style="text-align:center; font-size:1.4em; font-weight:bold;">a² + b² = c²</p>
+    <p><b>Ejemplo:</b> Si un triángulo tiene catetos de 3 y 4, entonces la hipotenusa es √(3² + 4²) = √25 = 5.</p>
+  </div>
+</section>
+
+<section id="juego">
+  <h2>Juego: Camino Pitagórico</h2>
+  <div class="card">
+    <h3>Objetivo General</h3>
+    <p>Aplicar y reforzar los conocimientos sobre el Teorema de Pitágoras resolviendo problemas de triángulos rectángulos mientras se avanza por un tablero.</p>
+
+    <h3>Objetivos Específicos</h3>
+    <ul>
+      <li>Comprender la relación entre catetos e hipotenusa en un triángulo rectángulo.</li>
+      <li>Calcular hipotenusas y catetos de manera práctica y divertida.</li>
+      <li>Desarrollar agilidad mental y cooperación en equipo.</li>
+    </ul>
+
+    <h3>Tipo de Pensamiento</h3>
+    <p>Lógico-matemático, crítico y creativo.</p>
+
+    <h3>Reglas del Juego</h3>
+    <ol>
+      <li>Cada jugador lanza el dado y avanza su ficha ese número de casillas.</li>
+      <li>Según el color de la casilla: Verde = calcular hipotenusa; Azul = calcular cateto; Amarilla = reto creativo.</li>
+      <li>Si la respuesta es correcta, se queda en la casilla; si es incorrecta, retrocede una casilla.</li>
+      <li>Gana el primero en llegar a la casilla 30.</li>
+    </ol>
+
+    <h3>Materiales</h3>
+    <ul>
+      <li>Tablero (cartulina con casillas del 1 al 30).</li>
+      <li>Fichas de colores (una por jugador).</li>
+      <li>Un dado.</li>
+      <li>Tarjetas verdes (hipotenusa), azules (cateto), amarillas (reto creativo).</li>
+      <li>Hoja de puntuación.</li>
+      <li>Lápiz y papel para operaciones.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="verdes">
+  <h2>Tarjetas Verdes (Hipotenusa)</h2>
+  <div class="accordion">
+    <button>Fáciles</button>
+    <div class="panel">
+      <div class="tarjeta verde">Catetos: 3 y 4. ¿Hipotenusa? (Resp: 5)</div>
+      <div class="tarjeta verde">Catetos: 5 y 12. ¿Hipotenusa? (Resp: 13)</div>
+      <div class="tarjeta verde">Catetos: 6 y 8. ¿Hipotenusa? (Resp: 10)</div>
+      <div class="tarjeta verde">Catetos: 7 y 24. ¿Hipotenusa? (Resp: 25)</div>
+    </div>
+
+    <button>Moderadas</button>
+    <div class="panel">
+      <div class="tarjeta verde">Catetos: 4 y 7. ¿Hipotenusa (2 decimales)? (Resp: 8.06)</div>
+      <div class="tarjeta verde">Catetos: 9 y 40. ¿Hipotenusa? (Resp: 41)</div>
+      <div class="tarjeta verde">Catetos: 10 y 10. ¿Hipotenusa (2 decimales)? (Resp: 14.14)</div>
+      <div class="tarjeta verde">Catetos: 8 y 15. ¿Hipotenusa? (Resp: 17)</div>
+    </div>
+
+    <button>Difíciles</button>
+    <div class="panel">
+      <div class="tarjeta verde">Catetos: 12 y 16. ¿Hipotenusa? (Resp: 20)</div>
+      <div class="tarjeta verde">Catetos: 9 y 12. ¿Hipotenusa? (Resp: 15)</div>
+    </div>
+  </div>
+</section>
+
+<section id="azules">
+  <h2>Tarjetas Azules (Cateto)</h2>
+  <div class="accordion">
+    <button>Fáciles</button>
+    <div class="panel">
+      <div class="tarjeta azul">Cateto 3, Hipotenusa 5. ¿Otro cateto? (Resp: 4)</div>
+      <div class="tarjeta azul">Cateto 5, Hipotenusa 13. ¿Otro cateto? (Resp: 12)</div>
+      <div class="tarjeta azul">Cateto 9, Hipotenusa 41. ¿Otro cateto? (Resp: 40)</div>
+      <div class="tarjeta azul">Cateto 4, Hipotenusa 10. ¿Otro cateto (2 decimales)? (Resp: 9.17)</div>
+    </div>
+
+    <button>Moderadas</button>
+    <div class="panel">
+      <div class="tarjeta azul">Cateto 7, Hipotenusa 25. ¿Otro cateto? (Resp: 24)</div>
+      <div class="tarjeta azul">Cateto 12, Hipotenusa 20. ¿Otro cateto? (Resp: 16)</div>
+      <div class="tarjeta azul">Cateto 8, Hipotenusa 17. ¿Otro cateto? (Resp: 15)</div>
+      <div class="tarjeta azul">Cateto 6, Hipotenusa 10. ¿Otro cateto (2 decimales)? (Resp: 8.0)</div>
+    </div>
+
+    <button>Difíciles</button>
+    <div class="panel">
+      <div class="tarjeta azul">Cateto 15, Hipotenusa 17. ¿Otro cateto? (Resp: 8)</div>
+      <div class="tarjeta azul">Cateto 9, Hipotenusa 15. ¿Otro cateto? (Resp: 12)</div>
+    </div>
+  </div>
+</section>
+
+<section id="amarillas">
+  <h2>Tarjetas Amarillas (Retos Creativos)</h2>
+  <div class="accordion">
+    <button>Fáciles</button>
+    <div class="panel">
+      <div class="tarjeta amarillo">Dibuja un triángulo rectángulo y explica dónde se podría usar el Teorema en la vida real (30 s).</div>
+      <div class="tarjeta amarillo">Encuentra un objeto en la clase que forme un triángulo rectángulo y explica los catetos y la hipotenusa.</div>
+      <div class="tarjeta amarillo">Escribe una frase corta que explique el Teorema con tus propias palabras.</div>
+      <div class="tarjeta amarillo">Dibuja y explica cómo medirías la distancia en diagonal de un rectángulo sin medirla directamente.</div>
+    </div>
+
+    <button>Moderadas</button>
+    <div class="panel">
+      <div class="tarjeta amarillo">Piensa en una situación en deportes donde podrías usar el Teorema y explícalo.</div>
+      <div class="tarjeta amarillo">Inventa un problema real de triángulo rectángulo y pide a otro jugador que lo resuelva.</div>
+      <div class="tarjeta amarillo">Dibuja un triángulo rectángulo y colorea los catetos de un color y la hipotenusa de otro.</div>
+      <div class="tarjeta amarillo">Describe un uso del Teorema en arquitectura.</div>
+    </div>
+
+    <button>Difíciles</button>
+    <div class="panel">
+      <div class="tarjeta amarillo">Explica en 20 segundos por qué la hipotenusa es siempre el lado más largo.</div>
+      <div class="tarjeta amarillo">Inventa una rima o frase para recordar la fórmula a² + b² = c².</div>
+    </div>
+  </div>
+</section>
+
+<script>
+  var acc = document.getElementsByClassName("accordion")[0].getElementsByTagName("button");
+  document.querySelectorAll(".accordion button").forEach(button => {
+    button.addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
+"""
